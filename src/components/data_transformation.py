@@ -21,7 +21,7 @@ class DataTransformation:
 
     def get_data_transformation_object(self):
         try:
-            numerical_cols = ["Age","Tenure","Balance","NumOfProducts","HasCrCard","IsActiveMember","EstimatedSalary","CreditScore"]
+            numerical_cols = ["CreditScore","Age","Tenure","Balance","NumOfProducts","HasCrCard","IsActiveMember","EstimatedSalary"]
             categorical_cols = ["Geography","Gender"]
             
             num_pipeline = Pipeline([
